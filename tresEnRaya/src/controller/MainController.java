@@ -3,6 +3,7 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
 import model.MainModel;
@@ -18,15 +19,16 @@ public class MainController {
 		this.mainView = mainView;
 		this.mainModel = mainModel;
 		
-		this.mainView.addCalculationListener(new CalculateListener());
+		this.mainView.addButtonListener(new ButtonListener());
 	}
 	
-	class CalculateListener implements ActionListener {
+	class ButtonListener implements ActionListener {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			JOptionPane.showMessageDialog(mainView, "CASILLA MARCADA");
+			JButton button = (JButton) e.getSource();
+			button.setText("PULSADO");
 		}
 		
 	}

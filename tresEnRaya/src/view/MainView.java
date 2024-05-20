@@ -49,9 +49,17 @@ public class MainView extends JFrame {
 		this.add(mainPanel);
 	}
 	
-	public void addCalculationListener(ActionListener listenerForCalcButton) {
+	public void addButtonListener(ActionListener listenerForButton) {
 		
-		square1.addActionListener(listenerForCalcButton);
+		square1.addActionListener(listenerForButton);
+		square2.addActionListener(listenerForButton);
+		square3.addActionListener(listenerForButton);
+		square4.addActionListener(listenerForButton);
+		square5.addActionListener(listenerForButton);
+		square6.addActionListener(listenerForButton);
+		square7.addActionListener(listenerForButton);
+		square8.addActionListener(listenerForButton);
+		square9.addActionListener(listenerForButton);
 	}
 	
 }
