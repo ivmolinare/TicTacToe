@@ -1,7 +1,7 @@
 package main;
 
 import controller.MainController;
-import model.MainModel;
+import model.GameManagerModel;
 import view.MainView;
 
 public class Main {
@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		MainView mainView = new MainView();
-		MainModel mainModel = new MainModel();
+		GameManagerModel mainModel = new GameManagerModel();
 		MainController mainController = new MainController(mainView, mainModel);
 		
 		mainView.setVisible(true);

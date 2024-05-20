@@ -5,19 +5,21 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
+import javax.swing.JToggleButton;
 
-import model.MainModel;
+import model.GameManagerModel;
 import view.MainView;
+import view.SquareViewComponent;
 
 public class MainController {
 
 	private MainView mainView;
-	private MainModel mainModel;
+	private GameManagerModel gameManagerModel;
 	
-	public MainController(MainView mainView, MainModel mainModel) {
+	public MainController(MainView mainView, GameManagerModel gameManagerModel) {
 		
 		this.mainView = mainView;
-		this.mainModel = mainModel;
+		this.gameManagerModel = gameManagerModel;
 		
 		this.mainView.addButtonListener(new ButtonListener());
 	}
@@ -27,8 +29,21 @@ public class MainController {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			JButton button = (JButton) e.getSource();
-			button.setText("PULSADO");
+			int round = gameManagerModel.getRound();
+			round++;
+			gameManagerModel.setRound(round);
+			
+			SquareViewComponent pressedButton = (SquareViewComponent) e.getSource();
+			
+			if(round % 2 == 0) {
+				
+				pressedButton.setIcon(mainView.getCross());
+				
+			} else {
+				
+				pressedButton.setIcon(mainView.getNought());
+			}
+			
 		}
 		
 	}
