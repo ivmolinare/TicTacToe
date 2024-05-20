@@ -83,5 +83,9 @@ public class MainView extends JFrame {
 	public Icon getNought() {
 		return nought;
 	}
+
+	public SquareViewComponent[] getSquares() {
+		return squares;
+	}
 	
 }
