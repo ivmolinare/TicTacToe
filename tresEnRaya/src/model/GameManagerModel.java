@@ -12,4 +12,7 @@ public class GameManagerModel {
 		this.round = round;
 	}
 	
+	public void advanceRound() {
+		this.round++;
+	}
 }

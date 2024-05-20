@@ -29,21 +29,22 @@ public class MainController {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			int round = gameManagerModel.getRound();
-			round++;
-			gameManagerModel.setRound(round);
-			
 			SquareViewComponent pressedButton = (SquareViewComponent) e.getSource();
 			
-			if(round % 2 == 0) {
+			if(pressedButton.getState() > 0) { return; }
+			
+			gameManagerModel.advanceRound();
+			
+			if(gameManagerModel.getRound() % 2 != 0) {
 				
 				pressedButton.setIcon(mainView.getCross());
+				pressedButton.setState(pressedButton.STATE_PRESSED_BY_PLAYER1);
 				
 			} else {
 				
 				pressedButton.setIcon(mainView.getNought());
+				pressedButton.setState(pressedButton.STATE_PRESSED_BY_PLAYER2);
 			}
-			
 		}
 		
 	}
