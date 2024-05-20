@@ -18,17 +18,11 @@ import javax.swing.UIManager;
 
 public class MainView extends JFrame {
 	
+	private final int NUM_SQUARES = 9;
+	
 	JPanel mainPanel;
 	
-	SquareViewComponent square1 = new SquareViewComponent();
-	SquareViewComponent square2 = new SquareViewComponent();
-	SquareViewComponent square3 = new SquareViewComponent();
-	SquareViewComponent square4 = new SquareViewComponent();
-	SquareViewComponent square5 = new SquareViewComponent();
-	SquareViewComponent square6 = new SquareViewComponent();
-	SquareViewComponent square7 = new SquareViewComponent();
-	SquareViewComponent square8 = new SquareViewComponent();
-	SquareViewComponent square9 = new SquareViewComponent();
+	SquareViewComponent[] squares = new SquareViewComponent[NUM_SQUARES];
 	
 	BufferedImage biCross;
 	BufferedImage biNought;
@@ -54,43 +48,32 @@ public class MainView extends JFrame {
 			e.printStackTrace();
 		}
 		
+		for(int i = 0; i < NUM_SQUARES; i++) 
+			squares[i] = new SquareViewComponent();
+		
 		Image imgCross = biCross.getScaledInstance(
-				square1.getPREFERED_INITIAL_WIDTH()/2,
-				square1.getPREFERED_INITIAL_HEIGHT()/2, 
+				squares[0].getPREFERED_INITIAL_WIDTH()/2,
+				squares[0].getPREFERED_INITIAL_HEIGHT()/2, 
 				Image.SCALE_SMOOTH);
 		
 		Image imgNought = biNought.getScaledInstance(
-				square1.getPREFERED_INITIAL_WIDTH()/2, 
-				square1.getPREFERED_INITIAL_HEIGHT()/2, 
+				squares[0].getPREFERED_INITIAL_WIDTH()/2, 
+				squares[0].getPREFERED_INITIAL_HEIGHT()/2, 
 				Image.SCALE_SMOOTH);
 		
 		cross = new ImageIcon(imgCross);
 		nought = new ImageIcon(imgNought);
 		
-		mainPanel.add(square1);
-		mainPanel.add(square2);
-		mainPanel.add(square3);
-		mainPanel.add(square4);
-		mainPanel.add(square5);
-		mainPanel.add(square6);
-		mainPanel.add(square7);
-		mainPanel.add(square8);
-		mainPanel.add(square9);
+		for(int i = 0; i < NUM_SQUARES; i++)
+			mainPanel.add(squares[i]);
 		
 		this.add(mainPanel);
 	}
 	
 	public void addButtonListener(ActionListener listenerForButton) {
 		
-		square1.addActionListener(listenerForButton);
-		square2.addActionListener(listenerForButton);
-		square3.addActionListener(listenerForButton);
-		square4.addActionListener(listenerForButton);
-		square5.addActionListener(listenerForButton);
-		square6.addActionListener(listenerForButton);
-		square7.addActionListener(listenerForButton);
-		square8.addActionListener(listenerForButton);
-		square9.addActionListener(listenerForButton);
+		for(int i = 0; i < NUM_SQUARES; i++)
+			squares[i].addActionListener(listenerForButton);
 	}
 
 	public Icon getCross() {

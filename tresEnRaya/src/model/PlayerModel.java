@@ -8,10 +8,31 @@ public class PlayerModel {
 	private int score;
 	private String name;
 	
-	PlayerModel(String name, int score) {
+	public PlayerModel(String name) {
 		
 		this.id = UUID.randomUUID();
-		this.score = score;
+		this.score = 0;
 		this.name = name;
 	}
+
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public UUID getId() {
+		return id;
+	}
+	
 }

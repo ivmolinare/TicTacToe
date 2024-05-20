@@ -1,8 +1,11 @@
 package model;
 
+import java.util.UUID;
+
 public class GameManagerModel {
 
 	private int round = 0;
+	private PlayerModel currentPlayer = null;
 
 	public int getRound() {
 		return round;
@@ -14,5 +17,13 @@ public class GameManagerModel {
 	
 	public void advanceRound() {
 		this.round++;
+	}
+	
+	public PlayerModel getCurrentPlayer() {
+		return currentPlayer;
+	}
+
+	public void setCurrentPlayer(PlayerModel currentPlayer) {
+		this.currentPlayer = currentPlayer;
 	}
 }
