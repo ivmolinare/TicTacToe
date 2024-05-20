@@ -38,12 +38,14 @@ public class MainView extends JFrame {
 		this.setResizable(false);
 		this.setLocationRelativeTo(null);
 		
+		this.setIconImage(new ImageIcon("res/appIcon.png").getImage());
+		
 		mainPanel = new JPanel();
 		mainPanel.setLayout(new GridLayout(3, 3));
 		
 		try {
-			biCross = ImageIO.read(new File("res/cross.png"));
-			biNought = ImageIO.read(new File("res/nought.png"));
+			biCross = ImageIO.read(getClass().getClassLoader().getResource("cross.png"));
+			biNought = ImageIO.read(getClass().getClassLoader().getResource("nought.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

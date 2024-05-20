@@ -67,7 +67,7 @@ public class MainController {
 					&& squares[1].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[2].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -75,7 +75,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[5].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -83,7 +83,7 @@ public class MainController {
 					&& squares[7].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[8].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -91,7 +91,7 @@ public class MainController {
 					&& squares[3].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[6].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -99,7 +99,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[7].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -107,7 +107,7 @@ public class MainController {
 					&& squares[5].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[8].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -115,7 +115,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[8].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -123,7 +123,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1
 					&& squares[2].getState() == pressedButton.STATE_PRESSED_BY_PLAYER1) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player1.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -133,7 +133,7 @@ public class MainController {
 					&& squares[1].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[2].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -141,7 +141,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[5].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -149,7 +149,7 @@ public class MainController {
 					&& squares[7].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[8].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -157,7 +157,7 @@ public class MainController {
 					&& squares[3].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[6].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -165,7 +165,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[7].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -173,7 +173,7 @@ public class MainController {
 					&& squares[5].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[8].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -181,7 +181,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[8].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
@@ -189,7 +189,7 @@ public class MainController {
 					&& squares[4].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2
 					&& squares[2].getState() == pressedButton.STATE_PRESSED_BY_PLAYER2) {
 				
-				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + " !");
+				JOptionPane.showMessageDialog(mainView, "¡Ha ganado " + player2.getName() + "!");
 				System.exit(0);
 			}
 			
