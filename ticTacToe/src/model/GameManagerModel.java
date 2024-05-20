@@ -1,7 +1,5 @@
 package model;
 
-import java.util.UUID;
-
 public class GameManagerModel {
 
 	private int round = 0;

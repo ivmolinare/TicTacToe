@@ -4,17 +4,13 @@ import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JToggleButton;
-import javax.swing.UIManager;
 
 public class MainView extends JFrame {
 	
@@ -38,7 +34,7 @@ public class MainView extends JFrame {
 		this.setResizable(false);
 		this.setLocationRelativeTo(null);
 		
-		this.setIconImage(new ImageIcon("res/appIcon.png").getImage());
+		this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("appIcon.png")).getImage());
 		
 		mainPanel = new JPanel();
 		mainPanel.setLayout(new GridLayout(3, 3));
